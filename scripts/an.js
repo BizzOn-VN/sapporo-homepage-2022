@@ -18,17 +18,45 @@ $('.spr-slider .owl-carousel').owlCarousel({
     items:1,
     nav:false,
     loop:true,
-    dots:false,
+    dots:true,
     stagePadding:0,
-    margin:11,
+    margin:0,
     URLhashListener:true,
     autoplayHoverPause:true,
-    startPosition: 'URLHash'
+    startPosition: 'URLHash',
+    autoplayTimeout:4000,
+    // autoplay:true,
+    autoplayHoverPause:true
 });
 
+// $('.slider-syncing-3').owlCarousel({
+//   loop:true,
+//   margin:10,
+//   items:1,
+//   dots:true,
+//   nav:false,
+//   URLhashListener:true,
+//   // autoplay:true,
+//   // animateIn: 'bounceOut',
+  
+//     autoplayTimeout:6000
+// })
+// $('.slider-syncing-4').owlCarousel({
+//   loop:false,
+//   margin:10,
+//   nav:true,
+//   items:4,
+//   dots:false,
+//   nav:false,
+//   center: false,
+//   animateIn: 'zoomIn',
+//   URLhashListener:true,
+//   autoplay:true,
+//   autoplayTimeout:6000
+// })
 
-
-
+var owlCarousel = $('.owl-carousel').data('owl.carousel');
+owlCarousel.remove(1);
 $('.slider-syncing-1').owlCarousel({
   loop:true,
   margin:10,

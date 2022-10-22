@@ -59,7 +59,7 @@ var owlCarousel = $('.owl-carousel').data('owl.carousel');
 owlCarousel.remove(1);
 $('.slider-syncing-1').owlCarousel({
   loop:true,
-  margin:10,
+  margin:0,
   items:1,
   dots:false,
   nav:false,
@@ -71,11 +71,11 @@ $('.slider-syncing-1').owlCarousel({
 })
 $('.slider-syncing-2').owlCarousel({
   loop:true,
-  margin:10,
+  margin:0,
   nav:true,
   items:1,
   dots:false,
-  nav:false,
+  nav:true,
   center: true,
   animateIn: 'zoomIn',
   URLhashListener:true,

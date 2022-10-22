@@ -669,6 +669,9 @@
 .blk-kham-pha .slider-syncing-1 {
   margin-top: -13%;
   position: relative;
+  background: url(../images/bg-3c-chuan.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
 }
 .blk-kham-pha .slider-syncing-2 {
   width: 100%;
@@ -679,7 +682,7 @@
   position: relative;
 }
 .blk-kham-pha .slider-syncing-2 .owl-nav .owl-prev {
-  display: none;
+  display: none !important;
 }
 .blk-kham-pha .slider-syncing-2 .owl-nav .owl-prev {
   margin: 0 auto;

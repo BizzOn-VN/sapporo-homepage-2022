@@ -16,6 +16,10 @@
   src: url(../fonts/SVN-GothamRoundedBoldItalic/SVN-GothamRoundedBoldItalic.woff2) format("woff2"), url(../fonts/SVN-GothamRoundedBoldItalic/SVN-GothamRoundedBoldItalic.eot) format("eot"), url(../fonts/SVN-GothamRoundedBoldItalic/SVN-GothamRoundedBoldItalic.ttf) format("ttf"), url(../fonts/SVN-GothamRoundedBoldItalic/SVN-GothamRoundedBoldItalic.woff) format("woff");
 }
 @font-face {
+  font-family: "SVN-GothamItalic";
+  src: url(../fonts/SVN-GothamItalic/SVN-GothamItalic.woff2) format("woff2"), url(../fonts/SVN-GothamItalic/SVN-GothamItalic.eot) format("eot"), url(../fonts/SVN-GothamItalic/SVN-GothamItalic.ttf) format("ttf"), url(../fonts/SVN-GothamItalic/SVN-GothamItalic.woff) format("woff");
+}
+@font-face {
   font-family: "SVN-GothamMedium";
   src: url(../fonts/SVN-GothamMedium/SVN-GothamMedium.woff2) format("woff2"), url(../fonts/SVN-GothamMedium/SVN-GothamMedium.eot) format("eot"), url(../fonts/SVN-GothamMedium/SVN-GothamMedium.ttf) format("ttf"), url(../fonts/SVN-GothamMedium/SVN-GothamMedium.woff) format("woff");
 }
@@ -678,18 +682,159 @@ input[type=submit] {
 .spr-url-hash .item {
   width: 24%;
 }
+.spr-url-hash .item.sanh-an a:after {
+  content: "";
+  width: 75%;
+  height: 80%;
+  background: url(../images/an-sanh-white.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.spr-url-hash .item.sanh-an a:hover:after {
+  background: url(../images/an-sanh.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  -webkit-transition-duration: 0.5;
+       -o-transition-duration: 0.5;
+          transition-duration: 0.5;
+}
+.spr-url-hash .item.uong-chuan a:after {
+  content: "";
+  width: 75%;
+  height: 80%;
+  background: url(../images/uong-chuan-white.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.spr-url-hash .item.uong-chuan a:hover:after {
+  background: url(../images/uong-chuan.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  -webkit-transition-duration: 0.1s;
+       -o-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+.spr-url-hash .item.song-tinh-te a:after {
+  content: "";
+  width: 75%;
+  height: 80%;
+  background: url(../images/song-tinh-te-white.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.spr-url-hash .item.song-tinh-te a:hover:after {
+  background: url(../images/song-tinh-te.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  -webkit-transition-duration: 0.1s;
+       -o-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+.spr-url-hash .item.ngay-tan-huong a:after {
+  content: "";
+  width: 75%;
+  height: 80%;
+  background: url(../images/ngay-tan-huong-white.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.spr-url-hash .item.ngay-tan-huong a:hover:after {
+  background: url(../images/ngay-tan-huong.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  -webkit-transition-duration: 0.1s;
+       -o-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+.spr-url-hash .item.active a:before {
+  display: block;
+}
+.spr-url-hash .item a {
+  display: block;
+  position: relative;
+}
+.spr-url-hash .item a:hover:before {
+  display: block;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.spr-url-hash .item a:before {
+  content: "";
+  width: 96%;
+  height: 95%;
+  border: 1px solid #DC8A40;
+  border-radius: 0.2vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
 .spr-url-hash .item a img {
   width: 100%;
 }
-.spr-url-hash .item a img:hover {
-  -webkit-transform: scale(1.06);
-  -ms-transform: scale(1.06);
-   -o-transform: scale(1.06);
-      transform: scale(1.06);
-  -webkit-transition: all 0.8s;
-  -o-transition: all 0.8s;
-     transition: all 0.8s;
-  opacity: 1;
+.spr-url-hash .item a .new {
+  position: absolute;
+  top: 0.8vw;
+  right: 1.1vw;
+  display: inline-block;
+  background: #F6A95A;
+  color: #FFF;
+  line-height: 1.2rem;
+  padding: 0.2vw 1.4vw 0.2vw 1.4vw;
+  border-radius: 1rem;
+  font-size: 1.1vw;
+  font-family: "UTMBebas";
+}
+@media screen and (max-width: 768px) {
+  .spr-url-hash .item a .new {
+    font-size: 3.1vw;
+    padding: 0.1vw 3.8vw 0.1vw 3.8vw;
+    top: 2.2vw;
+    right: 2.4vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .spr-url-hash .item a:hover:before {
+    display: block;
+  }
+  .spr-url-hash .item a:before {
+    border-radius: 2vw;
+    width: 95%;
+    height: 94%;
+  }
 }
 .spr-url-hash .owl-item.active .item {
   position: relative;
@@ -923,7 +1068,7 @@ input[type=submit] {
   display: block;
   font-size: 1.2vw;
   line-height: 1.3em;
-  font-family: "SVN-GothamRoundedBoldItalic";
+  font-family: "SVN-GothamItalic";
 }
 @media screen and (max-width: 768px) {
   .blk-giao-bia-nhanh .inner {

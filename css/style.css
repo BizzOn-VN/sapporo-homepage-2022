@@ -724,9 +724,9 @@ input[type=submit] {
   background: url(../images/uong-chuan.png) no-repeat center center;
   -webkit-background-size: auto 100%;
           background-size: auto 100%;
-  -webkit-transition-duration: 0.1s;
-       -o-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 .spr-url-hash .item.song-tinh-te a:after {
   content: "";
@@ -747,9 +747,9 @@ input[type=submit] {
   background: url(../images/song-tinh-te.png) no-repeat center center;
   -webkit-background-size: auto 100%;
           background-size: auto 100%;
-  -webkit-transition-duration: 0.1s;
-       -o-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 .spr-url-hash .item.ngay-tan-huong a:after {
   content: "";
@@ -770,12 +770,75 @@ input[type=submit] {
   background: url(../images/ngay-tan-huong.png) no-repeat center center;
   -webkit-background-size: auto 100%;
           background-size: auto 100%;
-  -webkit-transition-duration: 0.1s;
-       -o-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 .spr-url-hash .item.active a:before {
   display: block;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.spr-url-hash .item.active.sanh-an a:after {
+  content: "";
+  width: 75%;
+  height: 80%;
+  background: url(../images/an-sanh.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.spr-url-hash .item.active.uong-chuan a:after {
+  content: "";
+  width: 75%;
+  height: 80%;
+  background: url(../images/uong-chuan.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.spr-url-hash .item.active.song-tinh-te a:after {
+  content: "";
+  width: 75%;
+  height: 80%;
+  background: url(../images/song-tinh-te.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.spr-url-hash .item.active.ngay-tan-huong a:after {
+  content: "";
+  width: 75%;
+  height: 80%;
+  background: url(../images/ngay-tan-huong.png) no-repeat center center;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .spr-url-hash .item a {
   display: block;

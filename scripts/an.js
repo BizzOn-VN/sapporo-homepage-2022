@@ -25,35 +25,10 @@ $('.spr-slider .owl-carousel').owlCarousel({
     autoplayHoverPause:true,
     startPosition: 'URLHash',
     autoplayTimeout:3000,
-    autoplay:true,
+    // autoplay:true,
     autoplayHoverPause:true
 });
 
-// $('.slider-syncing-3').owlCarousel({
-//   loop:true,
-//   margin:10,
-//   items:1,
-//   dots:true,
-//   nav:false,
-//   URLhashListener:true,
-//   // autoplay:true,
-//   // animateIn: 'bounceOut',
-  
-//     autoplayTimeout:6000
-// })
-// $('.slider-syncing-4').owlCarousel({
-//   loop:false,
-//   margin:10,
-//   nav:true,
-//   items:4,
-//   dots:false,
-//   nav:false,
-//   center: false,
-//   animateIn: 'zoomIn',
-//   URLhashListener:true,
-//   autoplay:true,
-//   autoplayTimeout:6000
-// })
 
 var owlCarousel = $('.owl-carousel').data('owl.carousel');
 owlCarousel.remove(1);
@@ -64,10 +39,10 @@ $('.slider-syncing-1').owlCarousel({
   dots:false,
   nav:false,
   URLhashListener:true,
-  autoplay:true,
+  // autoplay:true,
   animateIn: 'rotateInDownLeft',
   
-    autoplayTimeout:6000
+    autoplayTimeout:4000
 })
 $('.slider-syncing-2').owlCarousel({
   loop:true,
@@ -79,33 +54,14 @@ $('.slider-syncing-2').owlCarousel({
   center: true,
   animateIn: 'zoomIn',
   URLhashListener:true,
-  autoplay:true,
-  autoplayTimeout:6000
+  // autoplay:true,
+  autoplayTimeout:4000
 })
-// $('.owl-carousel').owlCarousel({
-//     loop:true,
-//     margin:11,
-//     nav:true,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:1
-//         },
-//         1000:{
-//             items:1
-//         }
-//     }
-// })
 
   $('.dropdown')
   .dropdown({
     onChange: function(value, text, $selectedItem) {
       $("#main-play").attr('src',value);
-      // $('html,body').animate({
-      //       scrollTop: $(".video-star-tv").offset().top
-      //   }, 'slow');
       $("#main-play")[0].src += "?autoplay=1";
     setTimeout(function(){ $("#yt").show(); }, 200);
     }

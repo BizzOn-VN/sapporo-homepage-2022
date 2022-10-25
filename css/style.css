@@ -2224,3 +2224,7 @@ input[type=submit] {
     width: 0.4rem;
   }
 }
+
+.ws_images img {
+  max-height: 10000 !important;
+}

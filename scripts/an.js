@@ -14,6 +14,7 @@
     // $( window ).resize(function() {
     //   owlWrapperWidth( $('.owl-wrapper') );
     // });
+
 $(document).ready(function(){
     var owl=$('.spr-slider .gglcs-slider').owlCarousel({
         items:1,
@@ -108,3 +109,7 @@ $('.slider-syncing-2').owlCarousel({
         $("#main-play")[0].src += "?autoplay=1";
         setTimeout(function(){ $("#yt").show(); }, 200);
         })
+
+jQuery("#wowslider-container1").wowSlider({effect:"cube",prev:"",next:"",duration:20*100,delay:25*100,width:830,height:100,autoPlay:true,playPause:false,stopOnHover:false,loop:false,bullets:0,caption:true,captionEffect:"move",controls:true,onBeforeStep:0,images:0});
+
+

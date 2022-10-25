@@ -1016,12 +1016,12 @@
   }
   .blk-kham-pha .slider-syncing-2 .owl-nav .owl-prev:before {
     width: 6vw;
-    height: 7vw;
-    -webkit-background-size: auto 4.6vw;
-            background-size: auto 4.6vw;
+    height: 8vw;
+    -webkit-background-size: auto 5.3vw;
+            background-size: auto 5.3vw;
   }
   .blk-kham-pha .slider-syncing-2 .owl-nav .owl-prev:after {
-    font-size: 2.4vw;
+    font-size: 3.5vw;
   }
   .blk-kham-pha .ctn-inner {
     display: block;

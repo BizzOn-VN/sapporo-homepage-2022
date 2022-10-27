@@ -25,6 +25,7 @@
          <!-- <link href="vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css" media="screen" rel="stylesheet" type="text/css" />  --> 
          <link href="vendor/snow/styles.css" media="screen" rel="stylesheet" type="text/css" /> 
          <link href="vendor/semantic/semantic.min.css" media="screen" rel="stylesheet" type="text/css" /> 
+       <!--   <link rel="stylesheet" type="text/css" href="https://wowslider.com/sliders/demo-49/engine1/style.css" /> -->
         <link  href="css/style.css" rel="stylesheet" media="screen">
        <!--  <link  href="https://www.sapporo-starguide.comhttps://www.sapporo-starguide.com/static/css/global.css" type="text/css"> -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
@@ -326,7 +327,7 @@ _paq.push(['setSiteId', '2']);
 <main class="page-main page-spr-starguide">
   <div class="blk-slider ctn-container">
     <div class="ctn-inner">
-      <div class="spr-slider owl-wrapper ">
+      <div class="spr-slider owl-wrapper gglcs-slider">
         <div class="owl-carousel owl-theme gglcs-slider">
           <div class="item" data-hash="sanh-an">
             <img class="img-desktop" src="./images/banner-sanh-an.jpg" alt="">
@@ -457,7 +458,7 @@ _paq.push(['setSiteId', '2']);
   </div>
   <div class="wrapper-kham-pha">
     <div class="blk-kham-pha ctn-container clearfix">
-      <div class="ctn-inner clearfix">
+      <div class="ctn-inner clearfix" id="wowslider-container1">
         <div class="blk-left">
           <div>
             <div class="blk-whell">
@@ -480,7 +481,7 @@ _paq.push(['setSiteId', '2']);
               
             </div>
           </div>
-          <div class="slider-syncing-1 owl-carousel owl-theme">
+         <!--  <div class="slider-syncing-1 owl-carousel owl-theme">
             <div class="item" data-hash="clear">
               <img src="./images/clear.png" alt="">
             </div>
@@ -490,6 +491,14 @@ _paq.push(['setSiteId', '2']);
             <div class="item" data-hash="creamy">
               <img src="./images/creamy.png" alt="">
             </div>
+          </div> -->
+          <div class="ws_thumbs">
+              <div>
+                <img class="bg" src="./images/bg-3c-chuan.jpg" alt="">
+                  <a href="#"><img src="./images/clear.png" alt="menu photo with description" /></a>
+                  <a href="#" ><img src="./images/cold.png" alt="free download with range" /></a>
+                  <a href="#"><img src="./images/creamy.png" alt="add transition effects" /></a>
+              </div>
           </div>
           <div class="share-khoanh-khac">
             <div class="info-gift">
@@ -509,7 +518,7 @@ _paq.push(['setSiteId', '2']);
           </div>
         </div>
         <div class="blk-right">
-          <div class="slider-syncing-2 owl-carousel owl-theme">
+         <!--  <div class="slider-syncing-2 owl-carousel owl-theme">
             <a href="#clear" class="item" data-hash="clear">
               <img src="./images/blk-clear.png" alt="">
             </a>
@@ -519,6 +528,19 @@ _paq.push(['setSiteId', '2']);
             <a href="#creamy" class="item"data-hash="creamy">
               <img src="./images/blk-creamy.png" alt="">
             </a>
+          </div> -->
+          <div class="ws_images">
+              <ul>
+                  <li>
+                      <img src="./images/blk-clear.png" alt="Pie blog rollovers free photo effect" title="" id="wows1_0" />
+                  </li>
+                  <li>
+                      <img src="./images/blk-cold.png" alt="Buns full width template fade option" title="" id="wows1_1" />
+                  </li>
+                  <li>
+                      <img src="./images/blk-creamy.png" alt="Cookies big free demo hd images demo" title="" id="wows1_2" />
+                  </li>
+              </ul>
           </div>
           <div class="share-khoanh-khac">
             <div class="info-gift">
@@ -686,8 +708,32 @@ _paq.push(['setSiteId', '2']);
 <script src="vendor/semantic/semantic.min.js" type="text/javascript"></script>
 <script src="scripts/an.js" type="text/javascript"></script>  
 
-        
-
+<script type="text/javascript" src="https://wowslider.com/images/demo/jquery.js"></script>
+<script type="text/javascript" src="https://wowslider.com/styles/a.js"></script>
+<script type="text/javascript" src="https://wowslider.com/images/demo/wowslider.js"></script>
+<!-- <script type="text/javascript" src="https://wowslider.com/sliders/demo-49/engine1/script.js"></script> -->
+<script type="text/javascript">
+  // -----------------------------------------------------------------------------------
+// http://wowslider.com/
+// JavaScript Wow Slider is a free software that helps you easily generate delicious 
+// slideshows with gorgeous transition effects, in a few clicks without writing a single line of code.
+// Generated by WOW Slider 2.6
+//
+//***********************************************
+// Obfuscated by Javascript Obfuscator
+// http://javascript-source.com
+//***********************************************
+jQuery("#wowslider-container1").wowSlider({effect:"cube",prev:"",next:"",duration:20*100,delay:25*100,width:830,height:360,autoPlay:false,playPause:false,stopOnHover:false,loop:false,bullets:0,caption:true,captionEffect:"move",controls:true,onBeforeStep:0,images:0});
+$(document).ready(function () {
+  // $(".ws_next").click(function(){
+  //   alert("a");
+  // })
+  $(document).on('click', '.ws_next', function(){
+          $(".ws_thumbs").addClass("active");
+      });
+  });
+ // $("body").on('click', '#yourid', function() { alert("hello"); });
+</script>
                     
             <script type="text/javascript">
 gtag('event', 'ATTENTION-Drinking-Lover', {

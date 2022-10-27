@@ -900,8 +900,8 @@
 }
 
 .blk-kham-pha {
-  padding: 0.7vw 3vw 2vw 3vw;
-  width: 95%;
+  padding: 0.7vw 3vw 0vw 3vw;
+  width: 92%;
   margin: 0 auto;
   background: #c1c1c1;
 }
@@ -928,10 +928,11 @@
   z-index: 10;
 }
 .blk-kham-pha .blk-right {
-  width: 64%;
+  width: 65%;
   float: right;
   position: relative;
   z-index: 10;
+  padding: 0px 0px 2vw 5%;
 }
 .blk-kham-pha .blk-right .share-khoanh-khac {
   display: none;
@@ -1035,7 +1036,7 @@
   }
   .blk-kham-pha .blk-right {
     width: 100%;
-    padding: 0px;
+    padding: 0px 0px 5% 0px;
   }
   .blk-kham-pha .blk-right .share-khoanh-khac {
     display: block;
@@ -1767,4 +1768,183 @@
 
 .ws_images img {
   max-height: 10000 !important;
+}
+
+#wowslider-container1 .ws_thumbs {
+  position: relative;
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+  height: 0px;
+  z-index: -1;
+  background: url(../images/bg-3c-chuan.jpg) no-repeat;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+}
+#wowslider-container1 .ws_thumbs.active {
+  visibility: visible;
+  z-index: 1;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  #wowslider-container1 .ws_thumbs.active {
+    display: none;
+  }
+}
+#wowslider-container1 .ws_thumbs .bg {
+  width: 100%;
+}
+
+#wowslider-container1 .ws_thumbs a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  text-indent: 0px;
+  display: none;
+}
+#wowslider-container1 .ws_thumbs a.ws_selthumb {
+  display: block;
+  -webkit-animation: zoomIn 1s;
+       -o-animation: zoomIn 1s;
+          animation: zoomIn 1s;
+}
+#wowslider-container1 .ws_thumbs a img {
+  width: 100% !important;
+  border: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  #wowslider-container1 .ws_images {
+    padding: 0px 0px 10vw;
+  }
+}
+.ws_controls .ws_next {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto !important;
+  height: auto !important;
+  top: auto !important;
+  margin: -5% auto 0 auto !important;
+  left: 58% !important;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.ws_controls .ws_next:hover:after {
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #DE8B36;
+}
+.ws_controls .ws_next:after {
+  content: "Chạm để khám phá";
+  font-size: 1.3vw;
+  color: #000;
+  font-family: "SVN-GothamMedium";
+  padding-left: 0.2vw;
+}
+.ws_controls .ws_next:before {
+  content: "";
+  width: 2vw;
+  height: 3vw;
+  display: block;
+  background: url(../images/icon-hand.png) no-repeat center;
+  -webkit-background-size: auto 2vw;
+          background-size: auto 2vw;
+}
+@media screen and (max-width: 768px) {
+  .ws_controls .ws_next {
+    width: 41vw !important;
+    left: 50% !important;
+  }
+  .ws_controls .ws_next:before {
+    width: 6vw !important;
+    height: 8vw !important;
+    -webkit-background-size: auto 5.3vw;
+            background-size: auto 5.3vw;
+  }
+  .ws_controls .ws_next:after {
+    font-size: 3.5vw;
+  }
+}
+
+@-webkit-keyframes rotateInDownLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@-o-keyframes rotateInDownLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+       transform: rotate(-45deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes rotateInDownLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+       transform: rotate(-45deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-o-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
 }

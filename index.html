@@ -327,7 +327,7 @@ _paq.push(['setSiteId', '2']);
 <main class="page-main page-spr-starguide">
   <div class="blk-slider ctn-container">
     <div class="ctn-inner">
-      <div class="spr-slider owl-wrapper gglcs-slider">
+      <div class="spr-slider owl-wrapper">
         <div class="owl-carousel owl-theme gglcs-slider">
           <div class="item" data-hash="sanh-an">
             <img class="img-desktop" src="./images/banner-sanh-an.jpg" alt="">
@@ -424,9 +424,9 @@ _paq.push(['setSiteId', '2']);
       </div>
     </div>
   </div>
-  <div class="blk-giao-bia-nhanh">
+  <div class="blk-giao-bia-nhanh" id="list">
     <a class="inner" href="#">
-      <div class="icon">
+      <div class="icon" id="container">
         <img src="./images/giao-bia-nhanh.png" alt="">
       </div>
       <div class="arrow">
@@ -758,6 +758,22 @@ $(document).ready(function () {
       });
   });
  // $("body").on('click', '#yourid', function() { alert("hello"); });
+ $( "#list" ).draggable({
+    scroll: true,
+    axis: "x",
+    containment: "body",
+    revert: true,
+    helper: "clone",
+    disable: false,
+    start: function( event, ui ) {
+            $(ui.item).addClass("active-draggable");
+    },
+    drag: function( event, ui ) {
+    },
+    stop:function( event, ui ) {
+            $(ui.item).removeClass("active-draggable");
+    }
+});
 </script>
                     
             <script type="text/javascript">

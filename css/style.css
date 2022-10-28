@@ -1488,8 +1488,11 @@ input[type=submit] {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
+  .blk-whell {
+    margin-bottom: 24.5vw;
+  }
   .blk-whell .inner {
-    width: 60%;
+    width: 77%;
   }
 }
 
@@ -2727,13 +2730,19 @@ input[type=submit] {
   z-index: 1;
   height: auto;
 }
-@media screen and (max-width: 768px) {
-  #wowslider-container1 .ws_thumbs.active {
-    display: none;
-  }
-}
 #wowslider-container1 .ws_thumbs .bg {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #wowslider-container1 .ws_thumbs {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 90%;
+    top: 69%;
+  }
 }
 
 #wowslider-container1 .ws_thumbs a {

@@ -113,50 +113,6 @@ $('.slider-syncing-2').owlCarousel({
         })
 
 
-$( "#list" ).draggable({
-    scroll: true,
-    axis: "x",
-    containment: "body",
-    revert: true,
-    helper: "clone",
-    disable: false,
-    start: function( event, ui ) {
-      $(ui.item).addClass("active-draggable");
-    },
-    drag: function( event, ui ) {
-    },
-    stop:function( event, ui ) {
-      $(ui.item).removeClass("active-draggable");
-    }
-});
-
-$( "#container" ).droppable({
-    accept: "#list",
-    class: {
-          "ui-droppable-active":"ac"
-          "ui-droppable-hover":"hv"
-    }
-    acivate: function( event, ui ) {
-            $(this).css('background','red');
-    },
-    over: function( event, ui ) {
-            $(this).css('background','yellow");
-    },
-    out: function( event, ui ) {
-            $(this).css('background','blue');
-    },
-    drop: function( event, ui ) {
-            $(this).css('background','white');
-    },
-    deactivate: function( event, ui ) {
-             $(ui.item).css('background','green');
-    },
-});
 
 
-
-
-// $( "#container" ).droppable({
-//     accept: "#list"
-// });
 

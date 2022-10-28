@@ -424,9 +424,9 @@ _paq.push(['setSiteId', '2']);
       </div>
     </div>
   </div>
-  <div class="blk-giao-bia-nhanh" id="list">
+  <div class="blk-giao-bia-nhanh">
     <a class="inner" href="#">
-      <div class="icon" id="container">
+      <div class="icon">
         <img src="./images/giao-bia-nhanh.png" alt="">
       </div>
       <div class="arrow">
@@ -758,22 +758,6 @@ $(document).ready(function () {
       });
   });
  // $("body").on('click', '#yourid', function() { alert("hello"); });
- $( "#list" ).draggable({
-    scroll: true,
-    axis: "x",
-    containment: "body",
-    revert: true,
-    helper: "clone",
-    disable: false,
-    start: function( event, ui ) {
-            $(ui.item).addClass("active-draggable");
-    },
-    drag: function( event, ui ) {
-    },
-    stop:function( event, ui ) {
-            $(ui.item).removeClass("active-draggable");
-    }
-});
 </script>
                     
             <script type="text/javascript">

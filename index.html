@@ -723,13 +723,38 @@ _paq.push(['setSiteId', '2']);
 // Obfuscated by Javascript Obfuscator
 // http://javascript-source.com
 //***********************************************
-jQuery("#wowslider-container1").wowSlider({effect:"cube",prev:"",next:"",duration:20*100,delay:25*100,width:830,height:360,autoPlay:false,playPause:false,stopOnHover:false,loop:false,bullets:0,caption:true,captionEffect:"move",controls:true,onBeforeStep:0,images:0});
+jQuery("#wowslider-container1").wowSlider({effect:"cube",prev:"",next:"",duration:20*100,delay:10*100,width:830,height:360,autoPlay:false,playPause:false,stopOnHover:false,loop:false,bullets:0,caption:true,captionEffect:"move",controls:true,onBeforeStep:0,images:0});
 $(document).ready(function () {
   // $(".ws_next").click(function(){
   //   alert("a");
   // })
+  var one = 1;
+  // function click1(){
+  //   one += 1;
+  //   if (one === 3){
+  //     document.write('yes')
+  //   }
+  // }
   $(document).on('click', '.ws_next', function(){
-          $(".ws_thumbs").addClass("active");
+        $(".ws_thumbs").addClass("active");
+          if (one === 1){
+            setTimeout(function(){
+                $(".ws_next").trigger('click');
+                one += 1;
+            }, 1500);
+          }
+          if (one === 2){
+            setTimeout(function(){
+                $(".ws_next").trigger('click');
+                one += 1;
+            }, 1500);
+          }
+          if (one === 3){
+            setTimeout(function(){
+                $(".ws_next").trigger('click');
+                one =1;
+            }, 1500);
+          }
       });
   });
  // $("body").on('click', '#yourid', function() { alert("hello"); });

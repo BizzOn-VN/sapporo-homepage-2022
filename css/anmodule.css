@@ -486,6 +486,9 @@
     max-width: 80%;
   }
 }
+.blk-whell {
+  margin-bottom: 9.5vw;
+}
 .blk-whell .inner {
   width: 80%;
   position: relative;
@@ -1771,11 +1774,12 @@
 }
 
 #wowslider-container1 .ws_thumbs {
-  position: relative;
+  position: absolute;
+  top: 39%;
+  left: 0px;
   width: 100%;
   height: auto;
   visibility: hidden;
-  height: 0px;
   z-index: -1;
   background: url(../images/bg-3c-chuan.jpg) no-repeat;
   -webkit-background-size: 100% auto;

@@ -630,7 +630,9 @@
 }
 .blk-giao-bia-nhanh .inner {
   height: 5vw;
-  background: rgba(0, 0, 0, 0.4);
+  background-image: url(../images/bg-giao-bia-nhanh.png);
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
   border-radius: 4rem;
   width: 40%;
   display: table;
@@ -1961,3 +1963,8 @@
     opacity: 1;
   }
 }
+/*
+   CSS-Tricks Example
+   by Chris Coyier
+   http://css-tricks.com
+*/

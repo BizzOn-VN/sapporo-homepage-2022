@@ -14,7 +14,7 @@
     // $( window ).resize(function() {
     //   owlWrapperWidth( $('.owl-wrapper') );
     // });
-     
+ $("#slider-to-unlock").slideToUnlock(); 
 var SITE_URL = 'http://wowslider.com/';
 var owl=$('.spr-slider .gglcs-slider').owlCarousel({
         items:1,
@@ -48,22 +48,13 @@ $(document).ready(function(){
 
        },1);
      });
-    // $(".spr-url-hash .item").click(function(){
-    //   $(".spr-url-hash .item").removeClass("active");
-    //   $(this).addClass("active");
-    // })
 
 });
 $(document).ready(function () {  
   $(".spr-url-hash .sanh-an a")[0].click();
 }); 
-// function setCarouselCaption(el){
-  
-// }
 
 
-// var owlCarousel = $('.owl-carousel').data('owl.carousel');
-// owlCarousel.remove(1);
 $('.slider-syncing-1').owlCarousel({
   loop:true,
   margin:0,
@@ -111,8 +102,6 @@ $('.slider-syncing-2').owlCarousel({
         $("#main-play")[0].src += "?autoplay=1";
         setTimeout(function(){ $("#yt").show(); }, 200);
         })
-
-
 
 
 

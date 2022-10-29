@@ -982,7 +982,7 @@ a.link-to {
 
 #slider-to-unlock .drag {
   position: absolute;
-  width: 15vw;
+  width: 15.3vw;
   height: 120%;
   left: 0%;
   top: -10%;
@@ -995,7 +995,7 @@ a.link-to {
 }
 @media screen and (max-width: 768px) {
   #slider-to-unlock .drag {
-    width: 29vw;
+    width: 29.2vw;
   }
 }
 
@@ -1704,6 +1704,9 @@ a.link-to {
 
 .turn-right .relative {
   position: relative;
+  -webkit-animation: flash-right 4s infinite;
+       -o-animation: flash-right 4s infinite;
+          animation: flash-right 4s infinite;
 }
 .turn-right .relative .hidden {
   visibility: hidden;

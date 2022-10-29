@@ -704,6 +704,9 @@
 
 .turn-right .relative {
   position: relative;
+  -webkit-animation: flash-right 4s infinite;
+       -o-animation: flash-right 4s infinite;
+          animation: flash-right 4s infinite;
 }
 .turn-right .relative .hidden {
   visibility: hidden;

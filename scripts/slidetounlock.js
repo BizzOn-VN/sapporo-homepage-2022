@@ -117,7 +117,8 @@
                 }
                 this.$text.text(this.settings.unlockText);
                 this.$drag.removeClass('locked_handle').addClass('unlocked_handle');
-                $(".link-to")[0].click();
+                
+
                 if(!this.settings.allowToLock){
                     this.$drag.off("mousedown.slideToUnlock touchstart.slideToUnlock");
                 }
@@ -146,7 +147,12 @@
         }
 
         if(this.settings.status){
-            this.$drag.animate({"left": "100%", "margin-left": "-50px"});
+            this.$drag.animate({"left": "100%", "margin-left": "0px"});
+            this.$drag.animate({"left": "0%", "margin-left": "0px"});
+            
+            setTimeout(function(){
+                $(".link-to")[0].click();
+            }, 900);
             this.$progressBar.animate({width: "100%" });
         }
 

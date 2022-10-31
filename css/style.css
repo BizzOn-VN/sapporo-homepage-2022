@@ -1025,6 +1025,10 @@ a.link-to {
   background-color: transparent;
   padding-bottom: 1rem;
 }
+.page-main.page-iframe {
+  padding-bottom: 0px !important;
+  background: #c1c1c1 !important;
+}
 
 .content-hhc {
   position: absolute;
@@ -1906,8 +1910,22 @@ a.link-to {
     opacity: 1;
   }
 }
+#iframe-kham-pha {
+  width: 100%;
+  height: 59vw;
+  border: none;
+  background: #c1c1c1;
+  overflow: hidden !important;
+}
+@media screen and (max-width: 768px) {
+  #iframe-kham-pha {
+    height: 268vw;
+  }
+}
+
 .wrapper-kham-pha {
   background: #c1c1c1;
+  overflow: hidden;
 }
 
 .blk-kham-pha {
@@ -1915,6 +1933,11 @@ a.link-to {
   width: 92%;
   margin: 0 auto;
   background: #c1c1c1;
+}
+@media screen and (min-width: 768.1px) {
+  .blk-kham-pha {
+    padding-bottom: 5vw;
+  }
 }
 .blk-kham-pha .ctn-inner {
   background: #c1c1c1;
@@ -2410,15 +2433,23 @@ a.link-to {
   }
 }
 .headline_star_tv {
+  z-index: 3;
+  position: relative;
   background: #ffe9b6;
   display: table;
   width: 100%;
   padding: 0rem 0px 0.5rem 0px;
 }
+@media screen and (min-width: 768.1px) {
+  .headline_star_tv {
+    margin-top: -5vw;
+  }
+}
 @media screen and (max-width: 768px) {
   .headline_star_tv {
     padding: 3vw 0px 2.5vw 0px;
     background: #FFE9B6;
+    margin-top: -1.5vw;
   }
 }
 .headline_star_tv .blk-inner {

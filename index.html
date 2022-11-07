@@ -270,7 +270,7 @@ _paq.push(['setSiteId', '2']);
   <div class="container position-relative justify-content-center">
     <div class="navigation-logo py-2 mb-2">
         <a href="/vi_VN/star-guide">
-            <img id="logo" src="./images/logo.svg" alt="Classic Cars - Pimcore Demo">
+            <img id="logo" src="./images/logo.png" alt="Classic Cars - Pimcore Demo">
         </a>
     </div>
     <div class="navigation-icon">
@@ -459,6 +459,9 @@ _paq.push(['setSiteId', '2']);
     </div> -->
     <div class="inner">
       <div id="slider-to-unlock"> </div>
+      <div class="icon" id="icon" onclick="myFunction();">
+        <img src="./images/giao-bia-nhanh.png" alt="">
+      </div>
       <div class="arrow">
         <div class="turn-right  turn-right-1">
           <div class="relative">
@@ -521,13 +524,13 @@ _paq.push(['setSiteId', '2']);
               <div class="bg">
                 <img src="./images/clear.png" alt="">
               </div>
-              <div class="item active" data-hash="clear">
+              <div class="item data-hash-clear" data-hash="clear">
                 <img src="./images/clear.png" alt="">
               </div>
-              <div class="item" data-hash="cold">
+              <div class="item data-hash-cold" data-hash="cold">
                 <img src="./images/cold.png" alt="">
               </div>
-              <div class="item" data-hash="creamy">
+              <div class="item data-hash-creamy" data-hash="creamy">
                 <img src="./images/creamy.png" alt="">
               </div>
             </div>
@@ -543,23 +546,75 @@ _paq.push(['setSiteId', '2']);
           </div> -->
           <div class="share-khoanh-khac">
             <div class="info-gift">
-              <div class="item item-left">
-                <img src="./images/bat-qua-dinh-tan-nien.png" alt="">
-                <a class="tham-gia-ngay" href="#"><span>THAM GIA NGAY</span></a>
+              <div class="item">
+                <img src="./images/icon-chia-se.png" alt="">
+               <!--  <a class="tham-gia-ngay" href="#"><span>THAM GIA NGAY</span></a> -->
+               <div class="info">
+                <div class="inner-info">
+                  <img src="./images/3c-chia-se.png" alt="">
+                  <a class="the-le" href="">Thể lệ</a>
+                  <a class="link" href="">Tham gia ngay</a>
+                </div>
+                
+               </div>
               </div>
-              <div class="item item-right">
-                <img src="./images/rinh-qua-xin-say-me.png" alt="">
-                <a class="tham-gia-ngay" href="#"><span>THAM GIA NGAY</span></a>
+              <div class="item">
+                <img src="./images/icon-giai-ma.png" alt="">
+                <!-- <a class="tham-gia-ngay" href="#"><span>THAM GIA NGAY</span></a> -->
+                <div class="info active info-giai-ma">
+                 <div class="inner-info">
+                   <img src="./images/3c-giai-ma.png" alt="">
+                   <a class="the-le" href="">Thể lệ</a>
+                   <a class="link" href="">Tham gia ngay</a>
+                 </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="./images/icon-moment.png" alt="">
+              <!--   <a class="tham-gia-ngay" href="#"><span>THAM GIA NGAY</span></a> -->
+                <div class="info info-moment">
+                 <div class="inner-info">
+                   <img src="./images/3c-moment.png" alt="">
+                   <a class="the-le" href="">Tham gia ngay</a>
+                   <a class="link" href="">xem khoảnh khắc</a>
+                 </div>
+                </div>
               </div>
             </div>
-            <div class="more">
+            <!-- <div class="more">
               <a href="#">Xem khoảnh khắc</a>
-            </div>
+            </div> -->
+           
           </div>
           </div>
         </div>
         <div class="blk-right">
-          <div class="slider-url slider-url-2">
+          <div class="slider">
+            <div class="img">
+            </div>
+            
+            <div class="img">
+              <img src="./images/blk-clear.png" alt="">
+              
+            </div>
+            <div class="img">
+              <img src="./images/blk-creamy.png" alt="">
+            </div>
+            <div class="img">
+              <img src="./images/blk-cold.png" alt="">
+            </div>
+            <div class="img">
+              <img src="./images/blk-clear.png" alt="">
+              
+            </div>
+            <div class="img">
+              <img src="./images/blk-creamy.png" alt="">
+            </div>
+            <div class="img">
+              <img src="./images/blk-cold.png" alt="">
+            </div>
+          </div>
+         <!--  <div class="slider-url slider-url-2">
             <div class="inner-slider-url">
               <div class="bg">
                 <img src="./images/blk-clear.png" alt="">
@@ -576,7 +631,7 @@ _paq.push(['setSiteId', '2']);
             </div>
             
 
-            <!-- <a href="#clear" class="item" >
+            <a href="#clear" class="item" >
               
             </a>
             <a href="#cold" class="item" >
@@ -584,8 +639,8 @@ _paq.push(['setSiteId', '2']);
             </a>
             <a href="#creamy" class="item" data-hash="creamy">
               
-            </a> -->
-          </div>
+            </a>
+          </div> -->
           <div class="wrapper-button-click">
             <div class="wrp-inner">
               <div class="button-click">
@@ -610,18 +665,45 @@ _paq.push(['setSiteId', '2']);
           </div> -->
           <div class="share-khoanh-khac">
             <div class="info-gift">
-              <div class="item item-left">
-                <img src="./images/bat-qua-dinh-tan-nien.png" alt="">
-                <a class="tham-gia-ngay" href="#"><span>THAM GIA NGAY</span></a>
+              <div class="item">
+                <img src="./images/icon-chia-se.png" alt="">
+               <!--  <a class="tham-gia-ngay" href="#"><span>THAM GIA NGAY</span></a> -->
+               <div class="info">
+                <div class="inner-info">
+                  <img src="./images/3c-chia-se.png" alt="">
+                  <a class="the-le" href="">Thể lệ</a>
+                  <a class="link" href="">Tham gia ngay</a>
+                </div>
+                
+               </div>
               </div>
-              <div class="item item-right">
-                <img src="./images/rinh-qua-xin-say-me.png" alt="">
-                <a class="tham-gia-ngay" href="#"><span>THAM GIA NGAY</span></a>
+              <div class="item">
+                <img src="./images/icon-giai-ma.png" alt="">
+                <!-- <a class="tham-gia-ngay" href="#"><span>THAM GIA NGAY</span></a> -->
+                <div class="info active info-giai-ma">
+                 <div class="inner-info">
+                   <img src="./images/3c-giai-ma.png" alt="">
+                   <a class="the-le" href="">Thể lệ</a>
+                   <a class="link" href="">Tham gia ngay</a>
+                 </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="./images/icon-moment.png" alt="">
+              <!--   <a class="tham-gia-ngay" href="#"><span>THAM GIA NGAY</span></a> -->
+                <div class="info info-moment">
+                 <div class="inner-info">
+                   <img src="./images/3c-moment.png" alt="">
+                   <a class="the-le" href="">Tham gia ngay</a>
+                   <a class="link" href="">xem khoảnh khắc</a>
+                 </div>
+                </div>
               </div>
             </div>
-            <div class="more">
+            <!-- <div class="more">
               <a href="#">Xem khoảnh khắc</a>
-            </div>
+            </div> -->
+           
           </div>
         </div>
       </div>
@@ -802,7 +884,7 @@ _paq.push(['setSiteId', '2']);
 // $(document).ready(function() {
 //     jQuery("#wowslider-container1").wowSlider({effect:"cube",prev:"",next:"",duration:20*100,delay:10*100,width:830,height:360,autoPlay:false,playPause:false,stopOnHover:false,loop:false,bullets:0,caption:true,captionEffect:"move",controls:true,onBeforeStep:0,images:0});
 // });
-
+$(".link-to").trigger('click');
 $(document).ready(function () {
   // $(".ws_next").click(function(){
   //   alert("a");

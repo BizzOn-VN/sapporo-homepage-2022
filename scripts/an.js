@@ -362,7 +362,23 @@ $(document).ready(function() {
  
   });
 });
-setTimeout(function(){
-  $("#play-video").trigger("click");
-}, 3000);
+
+jQuery(function($) {
+    $('#main-play').on('scroll', function() {
+        if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+            alert('end reached');
+        }
+    })
+});
+$(window).scroll(function(){
+  var topPos = $(this).scrollTop();
+  var offset_top=$("#main-play").offset().top;
+  console.log( topPos + offset_top);
+  if(offset_top = topPos){
+    setTimeout(function(){
+      $("#main-play")[0].src += "&autoplay=1";
+      ev.preventDefault();
+    }, 1000);
+      }
+  });
 

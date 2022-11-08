@@ -493,6 +493,12 @@
 .blk-whell {
   margin-bottom: 1.5vw;
 }
+@media screen and (max-width: 768px) {
+  .blk-whell {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
 .blk-whell.hidden {
   opacity: 0;
   visibility: hidden;
@@ -942,9 +948,20 @@
   margin: 0 auto;
   background: #c1c1c1;
 }
+.blk-kham-pha.disabled .ctn-inner .blk-left .blk-whell {
+  opacity: 0;
+  visibility: hidden;
+}
+.blk-kham-pha.disabled .ctn-inner .blk-left .share-khoanh-khac {
+  opacity: 0;
+  visibility: hidden;
+}
 @media screen and (min-width: 768.1px) {
   .blk-kham-pha {
     padding-bottom: 5vw;
+  }
+  .blk-kham-pha .ctn-inner .blk-right .slider-url-1 {
+    display: none;
   }
 }
 .blk-kham-pha .ctn-inner {
@@ -1045,7 +1062,7 @@
 @media screen and (max-width: 768px) {
   .blk-kham-pha {
     width: 100%;
-    padding: 8vw 2% 10vw 2%;
+    padding: 8vw 2% 0vw 2%;
   }
   .blk-kham-pha .slider-syncing-1 {
     height: 0px;
@@ -1075,6 +1092,9 @@
   }
   .blk-kham-pha .blk-left .share-khoanh-khac {
     display: none;
+  }
+  .blk-kham-pha .blk-left .slider-url-1 {
+    display: none !important;
   }
   .blk-kham-pha .blk-right {
     width: 100%;
@@ -1382,6 +1402,7 @@
 }
 @media screen and (max-width: 768px) {
   .info-gift {
+    margin: 0 auto 40% auto;
     width: 92%;
   }
   .info-gift .item .info {
@@ -2109,6 +2130,9 @@
   margin: 0 auto;
   text-align: center;
 }
+.button-click.disabled-click {
+  pointer-events: none;
+}
 .button-click:after {
   content: "Chạm để khám phá";
   font-size: 1.3vw;
@@ -2335,6 +2359,14 @@
        -o-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
+  visibility: hidden;
+  z-index: -1;
+  opacity: 0;
+}
+.slider-url-1.active-slider-url {
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
 }
 .slider-url-1 .item.active {
   -webkit-animation: fadeIn 1.2s;
@@ -2344,7 +2376,7 @@
 @media screen and (max-width: 768px) {
   .slider-url-1 {
     width: 95%;
-    top: 71%;
+    top: 61%;
   }
 }
 
@@ -2376,6 +2408,7 @@
 @media screen and (max-width: 768px) {
   .slider {
     --s: 65vw;
+    margin: 0 auto 15%;
   }
 }
 .slider.next-2 {

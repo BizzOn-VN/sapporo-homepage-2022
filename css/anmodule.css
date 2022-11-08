@@ -481,13 +481,13 @@
 }
 
 .blk-slider {
-  margin-bottom: 3rem;
+  margin-bottom: 2.4rem;
 }
 
 @media screen and (min-width: 768px) {
   .blk-slider .ctn-inner {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 67%;
   }
 }
 .blk-whell {
@@ -643,12 +643,13 @@
   margin-bottom: 3rem;
 }
 .blk-giao-bia-nhanh .inner {
-  height: 5vw;
+  cursor: pointer;
+  height: 4.6vw;
   background-image: url(../images/bg-giao-bia-nhanh.png);
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
   border-radius: 4rem;
-  width: 40%;
+  width: 37%;
   display: table;
   margin: 0 auto;
   position: relative;
@@ -666,6 +667,12 @@
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 6%;
+}
+@media screen and (max-width: 768px) {
+  .blk-giao-bia-nhanh .inner .icon {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 .blk-giao-bia-nhanh .inner .icon img {
   height: 100%;

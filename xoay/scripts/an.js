@@ -14,7 +14,7 @@
     // $( window ).resize(function() {
     //   owlWrapperWidth( $('.owl-wrapper') );
     // });
- // $("#slider-to-unlock").slideToUnlock(); 
+ $("#slider-to-unlock").slideToUnlock(); 
 
 $(".share-khoanh-khac .info-gift .item ").hover(function(){
     $(".share-khoanh-khac .info-gift .item .info").removeClass("active");

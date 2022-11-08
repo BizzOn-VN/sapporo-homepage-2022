@@ -96,8 +96,14 @@ input[type=submit] {
 }
 
 .page-3c-animation .navbar .navigation-logo {
-  width: 9%;
-  min-width: 70px;
+  width: 6%;
+  min-width: 50px;
+}
+@media screen and (min-width: 768px) {
+  .page-3c-animation .navbar .navigation-logo {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .page-3c-animation .navbar .navigation-logo {
@@ -111,10 +117,28 @@ input[type=submit] {
 
 .page-3c-animation .navbar {
   background-color: rgba(0, 0, 0, 0.3) !important;
+  z-index: 600;
 }
 
 .page-3c-animation .navbar .navigation-logo {
   text-align: center;
+}
+
+#open-sapporo-nav.sticky_nav {
+  position: fixed;
+  top: 20px;
+  /* border: 1px solid #f5a967 !important; */
+  padding: 2px 4px !important;
+  background: #FFE9B6 !important;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  #open-sapporo-nav.sticky_nav {
+    padding: 2px 4px !important;
+  }
+}
+#open-sapporo-nav.sticky_nav img {
+  width: 24px !important;
 }
 
 .page-3c-animation .navbar .navigation-icon .account-login {
@@ -122,8 +146,8 @@ input[type=submit] {
   font-family: "UTMBebas";
   text-transform: uppercase;
   line-height: 1.3em;
-  font-size: -webkit-calc(1.2vw + 3px);
-  font-size: calc(1.2vw + 3px);
+  font-size: -webkit-calc(0.7vw + 3px);
+  font-size: calc(0.7vw + 3px);
 }
 @media screen and (max-width: 768px) {
   .page-3c-animation .navbar .navigation-icon .account-login {
@@ -972,6 +996,21 @@ a.link-to {
   left: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  #slider-to-unlock .progressBar {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #slider-to-unlock .text {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #slider-to-unlock .drag.locked_handle {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
 #slider-to-unlock .text {
   position: absolute;
   display: none;
@@ -1491,13 +1530,13 @@ a.link-to {
 }
 
 .blk-slider {
-  margin-bottom: 3rem;
+  margin-bottom: 2.4rem;
 }
 
 @media screen and (min-width: 768px) {
   .blk-slider .ctn-inner {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 67%;
   }
 }
 .blk-whell {
@@ -1653,12 +1692,13 @@ a.link-to {
   margin-bottom: 3rem;
 }
 .blk-giao-bia-nhanh .inner {
-  height: 5vw;
+  cursor: pointer;
+  height: 4.6vw;
   background-image: url(../images/bg-giao-bia-nhanh.png);
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
   border-radius: 4rem;
-  width: 40%;
+  width: 37%;
   display: table;
   margin: 0 auto;
   position: relative;
@@ -1676,6 +1716,12 @@ a.link-to {
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 6%;
+}
+@media screen and (max-width: 768px) {
+  .blk-giao-bia-nhanh .inner .icon {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 .blk-giao-bia-nhanh .inner .icon img {
   height: 100%;

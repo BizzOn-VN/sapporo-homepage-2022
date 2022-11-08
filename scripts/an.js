@@ -25,18 +25,22 @@ $(".share-khoanh-khac .info-gift .item ").hover(function(){
 
 
 var hoverandclick=1;
- $(".blk-giao-bia-nhanh .icon").hover(function(){
+ $(".blk-giao-bia-nhanh .inner").hover(function(){
    
    setTimeout(function(){
         
        $(".blk-giao-bia-nhanh .icon").css("left", "63%");
-    }, 700);
+    }, 500);
    setTimeout(function(){
         
         hoverandclick=2;
     }, 1500);
    
    }, function(){
+    setTimeout(function(){
+        $(".blk-giao-bia-nhanh .icon").css("left", "5%");
+     }, 500);
+    
  });
 
 
@@ -44,7 +48,6 @@ function myFunction(){
   hoverandclick+=1;
    if(hoverandclick===2){
     setTimeout(function(){
-         
         $(".blk-giao-bia-nhanh .icon").css("left", "63%");
      }, 700);
 
@@ -53,7 +56,7 @@ function myFunction(){
       $(".link-to").trigger('click');;
       hoverandclick=1;
       
-      window.open("https://www.w3schools.com");
+      window.open("https://giaobianhanh.com/");
       
       setTimeout(function(){
         
@@ -289,13 +292,20 @@ $(".button-click").click(function(){
       $(".slider-url .inner-slider-url .data-hash-creamy").addClass("active");
       
     }, 4000);
+     setTimeout(function(){
+      $(".slider").addClass("next-4");
+      loopslider=1;
+      $(".slider-url .inner-slider-url .item").removeClass("active");
+      $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
+      
+    }, 7000);
     setTimeout(function(){
       $(".share-khoanh-khac").removeClass("hidden")
       $(".slider-url-1").removeClass("active-slider-url");
       $(".button-click").removeClass("disabled");
       $(".blk-whell").removeClass("hidden");
       $(".button-click").removeClass("disabled-click");
-    }, 7000);
+    }, 9000);
      
   }
   if(loopslider===1){
@@ -304,22 +314,22 @@ $(".button-click").click(function(){
       $(".slider-url-1").addClass("active-slider-url");
       $(".blk-whell").addClass("hidden");
       $(".share-khoanh-khac").addClass("hidden");
-      $(".slider").addClass("next-4");
-      $(".slider-url .inner-slider-url .item").removeClass("active");
-      $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
-      $(".slider-url .inner-slider-url .item").removeClass("active");
-      $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
-    }, 1500);
-    setTimeout(function(){
       $(".slider").addClass("next-5");
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
-    }, 4000);
+      $(".slider-url .inner-slider-url .item").removeClass("active");
+      $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
+    }, 1500);
     setTimeout(function(){
       $(".slider").addClass("next-6");
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-creamy").addClass("active");
-    }, 7000);
+    }, 4000);
+    // setTimeout(function(){
+    //   $(".slider").addClass("next-7");
+    //   $(".slider-url .inner-slider-url .item").removeClass("active");
+    //   $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
+    // }, 7000);
     // setTimeout(function(){
     //   $(".slider").addClass("next-7");
     // }, 9000);
@@ -329,14 +339,14 @@ $(".button-click").click(function(){
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
       loopslider=0;
-    }, 10000);
+    }, 7000);
     setTimeout(function(){
       $(".share-khoanh-khac").removeClass("hidden")
       $(".slider-url-1").removeClass("active-slider-url");
       $(".button-click").removeClass("disabled");
       $(".blk-whell").removeClass("hidden");
       $(".button-click").removeClass("disabled-click");
-    }, 13000);
+    }, 9000);
     //  setTimeout(function(){
     //   $(".slider").addClass("next-7");
     // }, 6000);
@@ -408,4 +418,24 @@ $(".button-click").click(function(){
 //         }, 1000);
 //       }
 //   });
+$(document).ready(function(){
+  "use strict";
+  var offSetTop = 150;
+  var $scrollToTopButton = $('.scrollToTop');
+  //Check to see if the window is top if not then display button
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > offSetTop) {
+      $("#open-sapporo-nav").addClass("sticky_nav");
+    } else {
+      $("#open-sapporo-nav").removeClass("sticky_nav");
+    }
+  });
+  
+  //Click event to scroll to top
+  // $scrollToTopButton.click(function(){
+  //   $('html, body').animate({scrollTop : 0},800);
+  //   return false;
+  // });
+  
+});
 

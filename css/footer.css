@@ -503,6 +503,21 @@ a.link-to {
   left: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  #slider-to-unlock .progressBar {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #slider-to-unlock .text {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #slider-to-unlock .drag.locked_handle {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
 #slider-to-unlock .text {
   position: absolute;
   display: none;

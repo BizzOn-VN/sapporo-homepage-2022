@@ -362,6 +362,30 @@ $(".button-click").click(function(){
  
 //   });
 // });
+// setTimeout(function(){
+//       $(".play-video").trigger('click');
+//     }, 1000);
+
+
+// $(document).ready(function() {
+//   $('#play-video').on('click', function(ev) {
+ 
+//     $("#main-play")[0].src += "&autoplay=1";
+//     ev.preventDefault();
+
+ 
+//   });
+// });
+// setTimeout(function(){
+//   $("#play-video").trigger("click");
+// }, 1000);
+// jQuery(function($) {
+//     $('#main-play').on('scroll', function() {
+//         if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+//             alert('end reached');
+//         }
+//     })
+// });
 
 // jQuery(function($) {
 //     $('#main-play').on('scroll', function() {
@@ -370,15 +394,18 @@ $(".button-click").click(function(){
 //         }
 //     })
 // });
+// $()
+// $("#play-video").click(function(){
+// })
 // $(window).scroll(function(){
 //   var topPos = $(this).scrollTop();
 //   var offset_top=$("#main-play").offset().top;
 //   console.log( topPos + offset_top);
-//   if(offset_top = topPos){
-//     setTimeout(function(){
-//       $("#main-play")[0].src += "&autoplay=1";
-//       ev.preventDefault();
-//     }, 1000);
+//       if(offset_top = topPos){
+//         setTimeout(function(){
+//           $("#play-video").trigger("click");
+//           $("#play-video").off("click");
+//         }, 1000);
 //       }
 //   });
 

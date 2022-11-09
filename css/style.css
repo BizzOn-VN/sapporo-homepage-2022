@@ -1536,7 +1536,7 @@ a.link-to {
 @media screen and (min-width: 768px) {
   .blk-slider .ctn-inner {
     margin: 0 auto;
-    max-width: 67%;
+    max-width: 65%;
   }
 }
 .blk-whell {

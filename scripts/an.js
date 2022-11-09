@@ -318,15 +318,12 @@ $(".button-click").click(function(){
       loopslider=1;
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
-      
-    }, 10000);
-    setTimeout(function(){
       $(".share-khoanh-khac").removeClass("hidden")
       $(".slider-url-1").removeClass("active-slider-url");
       $(".button-click").removeClass("disabled");
       $(".blk-whell").removeClass("hidden");
       $(".button-click").removeClass("disabled-click");
-    }, 12000);
+    }, 10000);
      
   }
   if(loopslider===1){
@@ -372,15 +369,16 @@ $(".button-click").click(function(){
       $(".slider").removeClass("next-2 next-3 next-4 next-5 next-6");
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
-      loopslider=0;
-    }, 10000);
-    setTimeout(function(){
       $(".share-khoanh-khac").removeClass("hidden")
       $(".slider-url-1").removeClass("active-slider-url");
       $(".button-click").removeClass("disabled");
       $(".blk-whell").removeClass("hidden");
       $(".button-click").removeClass("disabled-click");
-    }, 13000);
+      loopslider=0;
+    }, 10000);
+    // setTimeout(function(){
+      
+    // }, 13000);
     //  setTimeout(function(){
     //   $(".slider").addClass("next-7");
     // }, 6000);

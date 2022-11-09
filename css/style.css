@@ -1577,7 +1577,7 @@ a.link-to {
   width: 100%;
 }
 .blk-whell .inner .whell-1 {
-  width: 60%;
+  width: 70%;
 }
 .blk-whell .inner .whell-1 img {
   -webkit-animation: bg-rotate 70s linear infinite;
@@ -2147,7 +2147,10 @@ a.link-to {
     padding: 0px;
   }
   .blk-kham-pha .blk-left .share-khoanh-khac {
-    display: none;
+    position: relative;
+    margin-top: -25.6%;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
   .blk-kham-pha .blk-left .slider-url-1 {
     display: none !important;
@@ -2158,6 +2161,12 @@ a.link-to {
   }
   .blk-kham-pha .blk-right .share-khoanh-khac {
     display: block;
+    visibility: hidden;
+    opacity: 0;
+    height: 0vw;
+  }
+  .blk-kham-pha .blk-right .share-khoanh-khac.hidden {
+    height: 38vw;
   }
 }
 
@@ -3712,8 +3721,6 @@ a.link-to {
   -webkit-transition-duration: 1.9s;
        -o-transition-duration: 1.9s;
           transition-duration: 1.9s;
-  -webkit-box-shadow: inset 0px 100px 200px 20px #FFF;
-          box-shadow: inset 0px 100px 200px 20px #FFF;
   position: relative;
 }
 .slider .img:before {

@@ -15,6 +15,14 @@
     //   owlWrapperWidth( $('.owl-wrapper') );
     // });
  // $("#slider-to-unlock").slideToUnlock(); 
+ function scrool_to_slider(){
+  var window_width= $(window).width();
+  if(window_width<768){
+    $('html,body').animate({
+            scrollTop: $(".button-click").offset().top -$(".slider").height() - $(".slider").height()*20/100
+    }, 'slow');
+  }
+}
 
 $(".share-khoanh-khac .info-gift .item ").hover(function(){
     $(".share-khoanh-khac .info-gift .item .info").removeClass("active");
@@ -265,7 +273,7 @@ var loopslider=0;
 
 $(".button-click").click(function(){
   
-  
+  scrool_to_slider();
   
   // $(".blk-kham-pha").addClass("disabled");
   $(".button-click").addClass("disabled-click");
@@ -464,4 +472,16 @@ $(document).ready(function(){
   // });
   
 });
+
+
+
+
+// jQuery(window).resize(function () {
+//   // smoke_animation();
+//   scrool_to_slider();
+
+// });
+// window.addEventListener("resize", function(event) {
+//     // smoke_animation();
+// })
 

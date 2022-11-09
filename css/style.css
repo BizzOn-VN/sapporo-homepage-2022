@@ -2801,7 +2801,7 @@ a.link-to {
   }
 }
 .headline_star_tv {
-  z-index: 3;
+  z-index: 100;
   position: relative;
   background: #ffe9b6;
   display: table;

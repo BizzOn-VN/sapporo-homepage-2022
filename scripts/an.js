@@ -270,7 +270,20 @@ $(".button-click").click(function(){
   // $(".blk-kham-pha").addClass("disabled");
   $(".button-click").addClass("disabled-click");
   if(loopslider===0){
-    
+    setTimeout(function(){
+      $(".slider-url-1").addClass("active-slider-url");
+      $(".blk-whell").addClass("hidden");
+      $(".share-khoanh-khac").addClass("hidden");
+
+    //   $(".slider-url .inner-slider-url .item").removeClass("active");
+    // $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
+      // $(".slider").addClass("next-2");
+      $(".slider-url-1 .item").removeClass("active");
+      $(".slider-url-1 .data-hash-cold").addClass("active");
+
+      // $(".slider-url .inner-slider-url .item").removeClass("active");
+      // $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
+    }, 1500);
     setTimeout(function(){
       $(".slider-url-1").addClass("active-slider-url");
       $(".blk-whell").addClass("hidden");
@@ -284,32 +297,45 @@ $(".button-click").click(function(){
 
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
-    }, 1500);
+    }, 4000);
     setTimeout(function(){
       $(".slider").addClass("next-3");
       loopslider=1;
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-creamy").addClass("active");
       
-    }, 4000);
+    }, 7000);
      setTimeout(function(){
       $(".slider").addClass("next-4");
       loopslider=1;
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
       
-    }, 7000);
+    }, 10000);
     setTimeout(function(){
       $(".share-khoanh-khac").removeClass("hidden")
       $(".slider-url-1").removeClass("active-slider-url");
       $(".button-click").removeClass("disabled");
       $(".blk-whell").removeClass("hidden");
       $(".button-click").removeClass("disabled-click");
-    }, 9000);
+    }, 12000);
      
   }
   if(loopslider===1){
-    
+    setTimeout(function(){
+      $(".slider-url-1").addClass("active-slider-url");
+      $(".blk-whell").addClass("hidden");
+      $(".share-khoanh-khac").addClass("hidden");
+
+    //   $(".slider-url .inner-slider-url .item").removeClass("active");
+    // $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
+      // $(".slider").addClass("next-2");
+      $(".slider-url-1 .item").removeClass("active");
+      $(".slider-url-1 .data-hash-cold").addClass("active");
+
+      // $(".slider-url .inner-slider-url .item").removeClass("active");
+      // $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
+    }, 1500);
      setTimeout(function(){
       $(".slider-url-1").addClass("active-slider-url");
       $(".blk-whell").addClass("hidden");
@@ -319,12 +345,12 @@ $(".button-click").click(function(){
       $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
-    }, 1500);
+    }, 4000);
     setTimeout(function(){
       $(".slider").addClass("next-6");
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-creamy").addClass("active");
-    }, 4000);
+    }, 7000);
     // setTimeout(function(){
     //   $(".slider").addClass("next-7");
     //   $(".slider-url .inner-slider-url .item").removeClass("active");
@@ -339,14 +365,14 @@ $(".button-click").click(function(){
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
       loopslider=0;
-    }, 7000);
+    }, 10000);
     setTimeout(function(){
       $(".share-khoanh-khac").removeClass("hidden")
       $(".slider-url-1").removeClass("active-slider-url");
       $(".button-click").removeClass("disabled");
       $(".blk-whell").removeClass("hidden");
       $(".button-click").removeClass("disabled-click");
-    }, 9000);
+    }, 13000);
     //  setTimeout(function(){
     //   $(".slider").addClass("next-7");
     // }, 6000);

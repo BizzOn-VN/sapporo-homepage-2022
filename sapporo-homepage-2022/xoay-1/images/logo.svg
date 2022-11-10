@@ -1,0 +1,32 @@
+<svg id="Group_28" data-name="Group 28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136.584" height="128" viewBox="0 0 136.584 128">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_23" data-name="Rectangle 23" width="136.584" height="128" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_24" data-name="Rectangle 24" width="136.584" height="128" transform="translate(-11)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_25" data-name="Group 25">
+    <g id="Group_24" data-name="Group 24" clip-path="url(#clip-path)">
+      <path id="Path_112" data-name="Path 112" d="M69.811,172.134a6.107,6.107,0,0,1-4.163-1.4v-3.221h.447c.687,2,2.082,2.9,3.407,2.9a1.821,1.821,0,0,0,1.876-1.862c0-1-.43-1.681-1.653-2.576-.67-.484-1.394-1.021-1.7-1.253-1.583-1.2-2.2-2.309-2.2-3.793a3.708,3.708,0,0,1,.724-2.238,4.575,4.575,0,0,1,3.9-1.575,6.2,6.2,0,0,1,3.27.842V160.8H73.3a2.667,2.667,0,0,0-2.684-2.076,1.7,1.7,0,0,0-1.825,1.628c0,.716.345,1.2,1.171,1.861.585.466,1.29.949,2.048,1.541,1.926,1.449,2.5,2.737,2.5,4.241a3.882,3.882,0,0,1-1.084,2.845,5.037,5.037,0,0,1-3.615,1.291" transform="translate(-34.72 -83.097)" fill="#fff"/>
+      <path id="Path_113" data-name="Path 113" d="M87.622,168.188c-.7,2.5-.74,2.631-.74,2.631-.188.679-.067,1,.466,1v.413H83.614v-.413c.516-.037.791-.357.981-1l3.546-11.759c.171-.5-.019-.734-.553-.734v-.411h4.131s3.613,12.169,3.854,12.9c.224.679.516,1,.911,1v.413H91.753v-.413c.516,0,.724-.269.5-1.02-.242-.806-.5-1.7-.758-2.613Zm.519-1.754h2.924L89.6,161.262Z" transform="translate(-44.222 -83.519)" fill="#fff"/>
+      <path id="Path_114" data-name="Path 114" d="M115.557,157.915h.343c2.927-.017,4.44,1.575,4.44,4.4,0,2.972-1.807,4.348-5.437,4.348h-.93v4.6c0,.339.26.555.792.555v.413h-4.491v-.413c.379,0,.705-.216.705-.555V158.917c0-.429-.277-.591-.705-.591v-.411Zm-.585,7.053c1.5,0,2.322-.771,2.322-2.794,0-1.718-.791-2.54-2.288-2.54h-1.033v5.334Z" transform="translate(-58.322 -83.519)" fill="#fff"/>
+      <path id="Path_115" data-name="Path 115" d="M138.014,157.915h.343c2.926-.017,4.443,1.575,4.443,4.4,0,2.972-1.808,4.348-5.439,4.348h-.93v4.6c0,.339.258.555.792.555v.413H132.73v-.413c.38,0,.707-.216.707-.555V158.917c0-.429-.276-.591-.707-.591v-.411Zm-.585,7.053c1.5,0,2.322-.771,2.322-2.794,0-1.718-.79-2.54-2.288-2.54h-1.032v5.334Z" transform="translate(-70.199 -83.519)" fill="#fff"/>
+      <path id="Path_116" data-name="Path 116" d="M161.363,172.134a4.454,4.454,0,0,1-3.511-1.345c-1.152-1.288-1.568-2.486-1.568-6.137,0-3.634.432-4.9,1.568-6.139a5.133,5.133,0,0,1,7.038,0c1.135,1.234,1.566,2.505,1.566,6.139,0,3.651-.413,4.849-1.582,6.137a4.432,4.432,0,0,1-3.51,1.345m-1.876-7.571a14.653,14.653,0,0,0,.36,4.241,1.573,1.573,0,0,0,3.048,0,14.7,14.7,0,0,0,.36-4.241,14.625,14.625,0,0,0-.36-4.241,1.573,1.573,0,0,0-3.048,0,14.574,14.574,0,0,0-.36,4.241" transform="translate(-82.656 -83.097)" fill="#fff"/>
+      <path id="Path_117" data-name="Path 117" d="M187.1,165.934c2.29,4.975,2.459,5.332,2.459,5.332a.878.878,0,0,0,.913.555v.413h-3.63l-2.547-5.908h-1.084v4.94c0,.359.31.555.775.555v.413h-4.474v-.413c.465,0,.688-.2.688-.555V158.918c0-.375-.172-.591-.688-.591v-.411h5.626c3.047,0,4.389,1.753,4.389,4.277a3.936,3.936,0,0,1-.671,2.416,4.008,4.008,0,0,1-1.755,1.325m-2.994-1.307c1.687,0,2.427-.841,2.427-2.613a2.087,2.087,0,0,0-2.359-2.38h-.963v4.992Z" transform="translate(-94.942 -83.519)" fill="#fff"/>
+      <path id="Path_118" data-name="Path 118" d="M208.254,172.134a4.456,4.456,0,0,1-3.51-1.345c-1.152-1.288-1.566-2.486-1.566-6.137,0-3.634.431-4.9,1.566-6.139a5.135,5.135,0,0,1,7.039,0c1.134,1.234,1.566,2.505,1.566,6.139,0,3.651-.414,4.849-1.584,6.137a4.43,4.43,0,0,1-3.511,1.345m-1.875-7.571a14.61,14.61,0,0,0,.361,4.241,1.572,1.572,0,0,0,3.046,0,14.661,14.661,0,0,0,.361-4.241,14.582,14.582,0,0,0-.361-4.241,1.572,1.572,0,0,0-3.046,0,14.531,14.531,0,0,0-.361,4.241" transform="translate(-107.457 -83.097)" fill="#fff"/>
+      <path id="Path_119" data-name="Path 119" d="M140.72,26.113H113.081L104.123,0,95.165,26.113H67.527l22.231,16.1L81.4,69.019l22.722-15.976,22.723,15.976-8.357-26.8Z" transform="translate(-35.714 0)" fill="#f9aa53"/>
+      <path id="Path_120" data-name="Path 120" d="M135.152,16.537l8.957,9.576L135.151,0l-8.958,26.113Z" transform="translate(-66.741 0)" fill="#ffe9b5"/>
+      <path id="Path_121" data-name="Path 121" d="M145.209,16.537l8.957,9.576L145.208,0Z" transform="translate(-76.798 0)" fill="#ffcd69"/>
+    </g>
+  </g>
+  <text id="Star" transform="translate(27.555 102.377)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" letter-spacing="0.199em">S</tspan><tspan y="0" letter-spacing="0.2em">ta</tspan><tspan y="0">r</tspan></text>
+  <text id="guide" transform="translate(63.636 102.377)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" letter-spacing="0.2em">guid</tspan><tspan y="0">e</tspan></text>
+  <text id="SAO_ĐỒNG_HÀNH" data-name="SAO ĐỒNG HÀNH" transform="translate(37.102 115.036)" fill="#fff" font-size="8" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" letter-spacing="-0.039em">S</tspan><tspan y="0" letter-spacing="-0.066em">A</tspan><tspan y="0" letter-spacing="-0.024em">O ĐỒN</tspan><tspan y="0" letter-spacing="-0.025em">G</tspan><tspan y="0" xml:space="preserve" letter-spacing="-0.024em"> H</tspan><tspan y="0" letter-spacing="-0.025em">À</tspan><tspan y="0" letter-spacing="-0.024em">N</tspan><tspan y="0">H</tspan></text>
+  <g id="Group_27" data-name="Group 27">
+    <g id="Group_26" data-name="Group 26" transform="translate(11)" clip-path="url(#clip-path-2)">
+      <text id="TRÊN_HÀNH_TRÌNH_TẬN_HƯỞNG" data-name="TRÊN HÀNH TRÌNH TẬN HƯỞNG" transform="translate(1 124.882)" fill="#fff" font-size="8" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" letter-spacing="-0.024em">TR</tspan><tspan y="0" letter-spacing="-0.025em">Ê</tspan><tspan y="0" letter-spacing="-0.024em">N </tspan><tspan y="0" letter-spacing="-0.025em">H</tspan><tspan y="0" letter-spacing="-0.024em">ÀN</tspan><tspan y="0" letter-spacing="-0.025em">H</tspan><tspan y="0" letter-spacing="-0.024em"> </tspan><tspan y="0" letter-spacing="-0.025em">T</tspan><tspan y="0" letter-spacing="-0.024em">RÌNH </tspan><tspan y="0" letter-spacing="-0.114em">T</tspan><tspan y="0" letter-spacing="-0.024em">ẬN HƯỞN</tspan><tspan y="0">G</tspan></text>
+    </g>
+  </g>
+</svg>

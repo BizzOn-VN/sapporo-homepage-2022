@@ -28,7 +28,7 @@ $(".share-khoanh-khac .info-gift .item ").hover(function(){
     $(".share-khoanh-khac .info-gift .item .info").removeClass("active");
     $(this).find(".info").addClass("active");
   }, function(){
-
+    $(".share-khoanh-khac .info-gift .item .info").removeClass("active");
 });
 
 

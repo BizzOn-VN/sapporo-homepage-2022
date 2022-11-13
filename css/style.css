@@ -157,6 +157,11 @@ input[type=submit] {
   }
 }
 
+.navbar.fixed-nav {
+  position: fixed;
+  width: 100%;
+}
+
 .navigation-logo {
   z-index: 2;
 }
@@ -3154,7 +3159,7 @@ a.link-to {
 }
 .more-video .more a {
   font-family: "HelveticaNeue";
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   color: #484848;
 }
 .more-video .more a:before {

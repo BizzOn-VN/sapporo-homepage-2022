@@ -458,8 +458,10 @@ $(document).ready(function(){
   $(window).scroll(function(){
     if ($(this).scrollTop() > offSetTop) {
       $("#open-sapporo-nav").addClass("sticky_nav");
+      $(".navbar").addClass("fixed-nav");
     } else {
       $("#open-sapporo-nav").removeClass("sticky_nav");
+      $(".navbar").removeClass("fixed-nav");
     }
   });
   

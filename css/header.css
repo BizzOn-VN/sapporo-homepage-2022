@@ -65,6 +65,11 @@
   }
 }
 
+.navbar.fixed-nav {
+  position: fixed;
+  width: 100%;
+}
+
 .navigation-logo {
   z-index: 2;
 }

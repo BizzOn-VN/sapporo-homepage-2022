@@ -1620,7 +1620,7 @@ a.link-to {
 }
 @media screen and (max-width: 768px) {
   .blk-whell {
-    margin-bottom: 14.5vw;
+    margin-bottom: 2.5vw;
   }
   .blk-whell .inner {
     width: 77%;
@@ -2043,7 +2043,7 @@ a.link-to {
 }
 .blk-kham-pha .blk-left {
   width: 35%;
-  padding: 2rem 1rem;
+  padding: 10vw 0px 0rem 2%;
   position: relative;
   z-index: 10;
 }
@@ -2052,7 +2052,7 @@ a.link-to {
   float: right;
   position: relative;
   z-index: 10;
-  padding: 0px 0px 2vw 5%;
+  padding: 0px 2% 2vw 3%;
 }
 .blk-kham-pha .blk-right .share-khoanh-khac {
   display: none;
@@ -2153,7 +2153,7 @@ a.link-to {
   }
   .blk-kham-pha .blk-left .share-khoanh-khac {
     position: relative;
-    margin-top: -25.6%;
+    margin-top: -8.6%;
     visibility: visible !important;
     opacity: 1 !important;
   }
@@ -2685,7 +2685,7 @@ a.link-to {
 }
 @media screen and (max-width: 768px) {
   .info-gift {
-    margin: 0 auto 40% auto;
+    margin: 0 auto 30% auto;
     width: 92%;
   }
   .info-gift .item .info {
@@ -3763,4 +3763,48 @@ a.link-to {
 
 #play-video.disabled {
   pointer-events: none;
+}
+
+.wrapper-rotate {
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper-rotate .image-rotate {
+  position: relative;
+}
+.wrapper-rotate .image-rotate img {
+  width: 100%;
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+}
+.wrapper-rotate .image-rotate img.img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.wrapper-rotate .image-rotate img.img.disabled-click {
+  pointer-events: none;
+}
+.wrapper-rotate .image-rotate img.bg {
+  opacity: 0;
+  visibility: hidden;
+}
+.wrapper-rotate .image-rotate img.rotate-90 {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+       -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.wrapper-rotate .image-rotate img.rotate-270 {
+  -webkit-transform: rotate(-270deg);
+      -ms-transform: rotate(-270deg);
+       -o-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+}
+.wrapper-rotate .image-rotate img.rotate-360 {
+  -webkit-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+       -o-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }

@@ -19,7 +19,7 @@
   var window_width= $(window).width();
   if(window_width<768){
     $('html,body').animate({
-            scrollTop: $(".button-click").offset().top -$(".slider").height() - $(".slider").height()*20/100
+            scrollTop: $(".button-click").offset().top -$(".wrapper-rotate").height() - $(".wrapper-rotate").height()*20/100
     }, 'slow');
   }
 }
@@ -270,18 +270,19 @@ var loopslider=0;
 // setTimeout(function(){
 //     $(".slider").addClass("next-2");
 //     }, 3000);
-
-$(".button-click").click(function(){
+var deg=0;
+$(".click-rotate").click(function(){
   
   scrool_to_slider();
   
   // $(".blk-kham-pha").addClass("disabled");
-  $(".button-click").addClass("disabled-click");
-  if(loopslider===0){
+  $(".click-rotate").addClass("disabled-click");
+  // if(loopslider===0){
     setTimeout(function(){
       $(".slider-url-1").addClass("active-slider-url");
       $(".blk-whell").addClass("hidden");
       $(".share-khoanh-khac").addClass("hidden");
+      
 
     //   $(".slider-url .inner-slider-url .item").removeClass("active");
     // $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
@@ -291,6 +292,7 @@ $(".button-click").click(function(){
 
       // $(".slider-url .inner-slider-url .item").removeClass("active");
       // $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
+      // $("#next").trigger('click');
     }, 1500);
     setTimeout(function(){
       $(".slider-url-1").addClass("active-slider-url");
@@ -299,22 +301,26 @@ $(".button-click").click(function(){
 
       $(".slider-url .inner-slider-url .item").removeClass("active");
     $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
-      $(".slider").addClass("next-2");
+      // $("#next").trigger('click');
       $(".slider-url-1 .item").removeClass("active");
       $(".slider-url-1 .data-hash-cold").addClass("active");
 
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
+      deg -=45;
+      $(".image-rotate .img").css("transform","rotate("+ deg +"deg)");
     }, 4000);
     setTimeout(function(){
-      $(".slider").addClass("next-3");
+      // $("#next").trigger('click');
       loopslider=1;
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-creamy").addClass("active");
-      
+      // $(".image-rotate .img").css("transform","rotate(-270deg)");
+      deg -=90;
+      $(".image-rotate .img").css("transform","rotate("+ deg +"deg)");
     }, 7000);
      setTimeout(function(){
-      $(".slider").addClass("next-4");
+      // $("#next").trigger('click');
       loopslider=1;
       $(".slider-url .inner-slider-url .item").removeClass("active");
       $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
@@ -322,134 +328,13 @@ $(".button-click").click(function(){
       $(".slider-url-1").removeClass("active-slider-url");
       $(".button-click").removeClass("disabled");
       $(".blk-whell").removeClass("hidden");
-      $(".button-click").removeClass("disabled-click");
+      $(".click-rotate").removeClass("disabled-click");
+      // $(".image-rotate .img").css("transform","rotate(0deg)");
+      deg -=45;
+      $(".image-rotate .img").css("transform","rotate("+ deg +"deg)");
     }, 10000);
-     
-  }
-  if(loopslider===1){
-    setTimeout(function(){
-      $(".slider-url-1").addClass("active-slider-url");
-      $(".blk-whell").addClass("hidden");
-      $(".share-khoanh-khac").addClass("hidden");
-
-    //   $(".slider-url .inner-slider-url .item").removeClass("active");
-    // $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
-      // $(".slider").addClass("next-2");
-      $(".slider-url-1 .item").removeClass("active");
-      $(".slider-url-1 .data-hash-cold").addClass("active");
-
-      // $(".slider-url .inner-slider-url .item").removeClass("active");
-      // $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
-    }, 1500);
-     setTimeout(function(){
-      $(".slider-url-1").addClass("active-slider-url");
-      $(".blk-whell").addClass("hidden");
-      $(".share-khoanh-khac").addClass("hidden");
-      $(".slider").addClass("next-5");
-      $(".slider-url .inner-slider-url .item").removeClass("active");
-      $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
-      $(".slider-url .inner-slider-url .item").removeClass("active");
-      $(".slider-url .inner-slider-url .data-hash-clear").addClass("active");
-    }, 4000);
-    setTimeout(function(){
-      $(".slider").addClass("next-6");
-      $(".slider-url .inner-slider-url .item").removeClass("active");
-      $(".slider-url .inner-slider-url .data-hash-creamy").addClass("active");
-    }, 7000);
-    // setTimeout(function(){
-    //   $(".slider").addClass("next-7");
-    //   $(".slider-url .inner-slider-url .item").removeClass("active");
-    //   $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
-    // }, 7000);
-    // setTimeout(function(){
-    //   $(".slider").addClass("next-7");
-    // }, 9000);
-    setTimeout(function(){
-      // $(".slider").addClass("next-6");
-      $(".slider").removeClass("next-2 next-3 next-4 next-5 next-6");
-      $(".slider-url .inner-slider-url .item").removeClass("active");
-      $(".slider-url .inner-slider-url .data-hash-cold").addClass("active");
-      $(".share-khoanh-khac").removeClass("hidden")
-      $(".slider-url-1").removeClass("active-slider-url");
-      $(".button-click").removeClass("disabled");
-      $(".blk-whell").removeClass("hidden");
-      $(".button-click").removeClass("disabled-click");
-      loopslider=0;
-    }, 10000);
-    // setTimeout(function(){
-      
-    // }, 13000);
-    //  setTimeout(function(){
-    //   $(".slider").addClass("next-7");
-    // }, 6000);
-    // setTimeout(function(){
-    //   $(".slider").$(".slider").addClass("next-7");
-    //   loopslider=0;
-    // }, 6000);
-    // setTimeout(function(){
-    //   $(".slider").removeClass("next-2 next-3 next-4 next-5 next-6 next-7")
-    //   loopslider=0;
-    // }, 8000);
-    
-  }
-  
     
 })
-// $(document).ready(function() {
-//   $('#play-video').on('click', function(ev) {
- 
-//     $("#main-play")[0].src += "&autoplay=1";
-//     ev.preventDefault();
-
- 
-//   });
-// });
-// setTimeout(function(){
-//       $(".play-video").trigger('click');
-//     }, 1000);
-
-
-// $(document).ready(function() {
-//   $('#play-video').on('click', function(ev) {
- 
-//     $("#main-play")[0].src += "&autoplay=1";
-//     ev.preventDefault();
-
- 
-//   });
-// });
-// setTimeout(function(){
-//   $("#play-video").trigger("click");
-// }, 1000);
-// jQuery(function($) {
-//     $('#main-play').on('scroll', function() {
-//         if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-//             alert('end reached');
-//         }
-//     })
-// });
-
-// jQuery(function($) {
-//     $('#main-play').on('scroll', function() {
-//         if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-//             alert('end reached');
-//         }
-//     })
-// });
-// $()
-// $("#play-video").click(function(){
-// })
-// $(window).scroll(function(){
-//   var topPos = $(this).scrollTop();
-//   var offset_top=$("#main-play").offset().top;
-//   console.log( topPos + offset_top);
-//       if(offset_top = topPos){
-//         setTimeout(function(){
-//           $("#play-video").trigger("click");
-//           $("#play-video").off("click");
-//         }, 1000);
-//       }
-//   });
 $(document).ready(function(){
   "use strict";
   var offSetTop = 150;
@@ -473,7 +358,20 @@ $(document).ready(function(){
   
 });
 
+// let cube = document.querySelector(".image-cube");
+// let btnNext = document.getElementById("next");
+// let btnPrev = document.getElementById("prev");
 
+// let pos = 0;
+
+// btnNext.addEventListener("click", () => {
+//   pos -= 90;
+//   cube.style.transform = `rotateY(${pos}deg)`;
+// });
+// btnPrev.addEventListener("click", () => {
+//   pos += 90;
+//   cube.style.transform = `rotateY(${pos}deg)`;
+// });
 
 
 // jQuery(window).resize(function () {
